@@ -6,6 +6,48 @@ body {
     font-variation-settings: "wdth" 100;
 }
 
+a {
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #990000;
+}
+
+.btn {
+    display: flex;
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #1A4D54;
+    box-shadow: 0 4px 8.6px 0 rgba(0, 0, 0, 0.11);
+    color: #FFF;
+    text-align: center;
+    font-family: Playfair;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #000;
+    color: #FFF;
+}
+
+.btnformat {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -14,13 +56,21 @@ nav {
     box-shadow: 0 4px 20.6px 0 rgba(0, 0, 0, 0.10);
 }
 
+@media screen and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        gap: 5px;
+        padding: 20px;
+    }
+}
+
 ul.nav-links {
     display: flex;
     list-style: none;
     gap: 10px;
 }
 
-a {
+ul.nav-links li a {
     text-decoration: none;
     color: #000;
 }
@@ -36,6 +86,12 @@ h1 {
 
     font-size: 65px;
     line-height: 96.36%; /* 72.27px */
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 40px;
+    }
 }
 
 p {
